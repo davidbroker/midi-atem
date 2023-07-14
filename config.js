@@ -8,7 +8,7 @@ const config = {
       "note": 2, // MIDI Note: 0-127
       "velocity": 100, // Velocity: 0-127
       "atemIp": "192.1.1.101", // IP Addres of Atem device
-      "atemCmd": "startStream", // See README for supported commands and parameters
+      "atemCmd": "startStreaming", // See README for supported commands and parameters
       "atemCmdParams": [] // See README for supported commands and parameters
       },
      */
