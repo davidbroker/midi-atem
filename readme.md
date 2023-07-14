@@ -41,8 +41,8 @@ Multiple triggers can also be defined on the same MIDI trigger point. The trigge
 | `midiPort`          | Name of the MIDI port (aka Device).|
 | `midiCmd`           | The command that executes the trigger. Can be noteon or noteoff |
 | `midiChannel`       | MIDI Channel to listen for. Can be * for any. |
-| `midiNote`          | MIDI Channel to listen for  Can be * for any. |
-| `midiVelocity`      | MIDI Channel to listen for |
+| `midiNote`          | MIDI Note to listen for. Can be * for any. |
+| `midiVelocity`      | MIDI Velocity to listen for. Can be * for any.|
 | `atemIp`            | IP Address of the ATEM device|
 | `atemCmd`           | Atem Command. See below for list of options. |
 | `atemCmdParameters` | Array of parameters for the Atem Command. See below for parameters for the command |
@@ -83,9 +83,9 @@ I've implemented the ones I need. It is very easy to add more.
 ### RUNNING AS A SERVICE:
 1. Open a terminal window and change directory to the folder where you placed the source code.
 1. Install the Node.js library, `pm2`, by typing `npm install -g pm2`. This will install it globally on your system.
-1. After `pm2` is installed, type `pm2 start maiindexn.js --name midi-atem` to daemonize it as a service.
+1. After `pm2` is installed, type `pm2 start index.js --name midi-atem` to daemonize it as a service.
 1. If you would like it to start automatically upon bootup, type `pm2 startup` and follow the instructions on-screen.
-1. To view the console output while running the software with `pm2`, type `pm2 logs midi-relay`.
+1. To view the console output while running the software with `pm2`, type `pm2 logs midi-atem`.
 
 This program runs an HTTP server listening on port `4000`. If this port is in use and cannot be opened, you will receive an error.
 
