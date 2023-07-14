@@ -1,5 +1,5 @@
 {
-	"name": "midi-atem",
+	"name": "midi-atem-bridge",
 	"productName": "MIDI Atem Bridge",
 	"description": "Listens for incoming MIDI messages on local ports sends commands to an ATEM Video switcher.",
 	"version": "0.0.1",
@@ -15,7 +15,7 @@
 	},
 	"main": "index.js",
 	"bin": {
-		"midi-atem-bridge": "index.js"
+		"midi-atem": "index.js"
 	},
 	"scripts": {},
 
