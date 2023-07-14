@@ -1,5 +1,5 @@
 {
-	"name": "midi-atem-bridge",
+	"name": "midi-atem",
 	"productName": "MIDI Atem Bridge",
 	"description": "Listens for incoming MIDI messages on local ports sends commands to an ATEM Video switcher.",
 	"version": "0.0.1",
@@ -21,10 +21,10 @@
 
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/davidbroker/midi-atem-bridge.git"
+		"url": "git+https://github.com/davidbroker/midi-atem.git"
 	},
 	"bugs": {
-		"url": "https://github.com/davidbroker/midi-atem-bridge/issues"
+		"url": "https://github.com/davidbroker/midi-atem/issues"
 	},
-	"homepage": "https://github.com/davidbroker/midi-atem-bridge#readme"
+	"homepage": "https://github.com/davidbroker/midi-atem#readme"
 }
