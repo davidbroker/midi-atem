@@ -25,7 +25,7 @@ const config = {
       },
     {
       "midiport": "IAC Driver Bus 1",
-      "midicommand": "noteon",
+      "midicommand": "noteoff",
       "channel": 0,
       "note": 48,
       "velocity": 100,
@@ -37,11 +37,11 @@ const config = {
       "midiport": "Launchkey Mini MK3 MIDI Port",
       "midicommand": "noteon",
       "channel": 0,
-      "note": 48,
+      "note": 50,
       "velocity": '*',
       "atemIp": "192.1.1.101",
-      "atemCmd": "startstream",
-      "atemCmdParameters": "undefined"
+      "atemCmd": "macroRun",
+      "atemCmdParameters": 2
     }
   ]
 }
