@@ -76,7 +76,7 @@ I've implemented the ones I need. It is very easy to add more.
 
 ### RUNNING DIRECTLY WITHIN NODE:
 1. Install `node` if not already installed. <https://nodejs.org/en/download/>
-1. Download the midi-relay source code.
+1. Download the midi-atem source code.
 1. Open a terminal window and change directory to the folder where you placed the source code.
 1. Type `node index.js` within the this folder.
 
@@ -88,3 +88,9 @@ I've implemented the ones I need. It is very easy to add more.
 1. To view the console output while running the software with `pm2`, type `pm2 logs midi-atem`.
 
 Upon startup, the program will enumerate through the available MIDI input and output ports. It will also process the stored output triggers into memory and open any MIDI ports mentioned and start listening to them for incoming MIDI messages.
+
+
+### PACKAGING:
+1. Install `pkg` by running `npm install -g pkg`
+1. Run `pkg  --out-path=bin .`
+
